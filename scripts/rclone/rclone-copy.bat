@@ -10,6 +10,7 @@ ECHO .
 ECHO ================
 
 REM Set the configuration stuff here
+REM Rclone location config name, your Windows home folder, and your username on the file server.
 
 SET RC=c:\rclone\rclone.exe
 SET RC-CONFIG=fileserver
