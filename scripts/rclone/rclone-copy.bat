@@ -17,6 +17,7 @@ SET RC-CONFIG=fileserver
 REM SET HOME=C:\Users\username
 SET USER=username-on-server
 
+REM The following are provided as examples
 
 %RC% copy "%HOMEPATH%\Documents" %RC-CONFIG%:/%USER%
 %RC% copy "%HOMEPATH%\Videos" %RC-CONFIG%:/%USER%
