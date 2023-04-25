@@ -17,6 +17,7 @@ export RCCONFIG=fileserver
 export USER=username-on-server
 
 # The use of quootes allows for any usernames with spaces.
+# The following are provided as examples
 
 $RC copy "$HOME/Documents" $RCCONFIG:/$USER
 $RC copy "$HOME/Videos" $RCCONFIG:/$USER
