@@ -10,7 +10,7 @@ rclone-copy.sh  is intended for Mac/Linx
 ## Mac
 mac-rc-install.sh is for automating the install on a Mac from the steps here: https://rclone.org/install/
 
-Before opening a terminal and runing the following script you should review it first to make so you know what you are downlaoding and running. We are using the sudo in the script command so you will be prompted for your password.
+Before opening a terminal and runing the following script you should review it first to make sure you know what you are downlaoding and running. We are using the sudo in the script command so you will be prompted for your password.
 
 ```
 curl -O https://raw.githubusercontent.com/it4me-usbc/stuff/main/scripts/rclone/mac-rc-install.sh
