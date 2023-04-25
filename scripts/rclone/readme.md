@@ -16,4 +16,4 @@ Open a terminal and run the following
 curl -O https://github.com/it4me-usbc/stuff/edit/main/scripts/rclone/mac-rc-install.sh
 chmod +x mac-rc-install.sh
 ./mac-rc-install.sh
-'''
+
