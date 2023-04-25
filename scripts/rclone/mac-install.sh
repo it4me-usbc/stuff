@@ -21,4 +21,4 @@ sudo mv rclone /usr/local/bin/
 cd .. && rm -rf rclone-*-osx-amd64 rclone-current-osx-amd64.zip
 
 echo Now we run the web config
-rclone 
+rclone rcd --rc-web-gui
