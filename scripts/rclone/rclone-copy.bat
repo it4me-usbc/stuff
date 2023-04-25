@@ -14,11 +14,11 @@ REM Rclone location config name, your Windows home folder, and your username on 
 
 SET RC=c:\rclone\rclone.exe
 SET RC-CONFIG=fileserver
-SET HOME=C:\Users\username
+REM SET HOME=C:\Users\username
 SET USER=username-on-server
 
 
-%RC% copy "%HOME%\Documents" %RC-CONFIG%:/%USER%
-%RC% copy "%HOME%\Videos" %RC-CONFIG%:/%USER%
-%RC% copy "%HOME%\Pictures" %RC-CONFIG%:/%USER%
-%RC% copy "%HOME%\Desktop\Data" %RC-CONFIG%:/%USER%
+%RC% copy "%HOMEPATH%\Documents" %RC-CONFIG%:/%USER%
+%RC% copy "%HOMEPATH%\Videos" %RC-CONFIG%:/%USER%
+%RC% copy "%HOMEPATH%\Pictures" %RC-CONFIG%:/%USER%
+%RC% copy "%HOMEPATH%\Desktop\Data" %RC-CONFIG%:/%USER%
