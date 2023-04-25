@@ -13,6 +13,6 @@ mac-rc-install.sh is for automating the install on a Mac.
 Open a terminal and run the following
 
 ```
-curl -O https://github.com/it4me-usbc/stuff/main/scripts/rclone/mac-rc-install.sh
+curl -O https://raw.githubusercontent.com/it4me-usbc/stuff/main/scripts/rclone/mac-rc-install.sh
 chmod +x mac-rc-install.sh
 ./mac-rc-install.sh
