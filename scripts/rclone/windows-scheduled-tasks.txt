@@ -1,0 +1,5 @@
+These are some examples of how to setup Winddows scheduled tasks form the command line rather than using the Wizard
+
+This one is not reccomended > schtasks /create /tn "On Login" /tr "c:\rclone\rclone-copy.bat" /sc onlogon /rl highest
+schtasks /create /tn "Run Rclone every 30min" /tr "c:\rclone\rclone-copy.bat" /sc minute /mo 30 /st 07:00 /rl highest
+schtasks /create /tn "Run Rclone backup" /tr "c:\rclone\rclone-copy.bat" /sc Daily /st 07:00 /rl highest
