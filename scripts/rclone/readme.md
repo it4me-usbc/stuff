@@ -17,6 +17,7 @@ curl -O https://raw.githubusercontent.com/it4me-usbc/stuff/main/scripts/rclone/m
 chmod +x mac-rc-install.sh
 ./mac-rc-install.sh
 
+---
 
 The basics of the rclone.conf file are this:
 
