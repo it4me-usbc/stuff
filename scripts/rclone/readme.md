@@ -16,3 +16,14 @@ Before opening a terminal and runing the following script you should review it f
 curl -O https://raw.githubusercontent.com/it4me-usbc/stuff/main/scripts/rclone/mac-rc-install.sh
 chmod +x mac-rc-install.sh
 ./mac-rc-install.sh
+
+
+The basics of the rclone.conf file are this:
+
+---
+[configname]
+type = smb
+domain = WORKGROUP
+host = hostname
+pass = LK:JDFS*(U&(DF(()&()*(&DFS:J
+user = username
