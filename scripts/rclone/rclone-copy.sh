@@ -11,7 +11,7 @@ echo ================
 # Set the configuration stuff here
 # Rclone location config name, your Windows home folder, and your username on the file server.
 
-export RC=/user/bin/rclone
+export RC=/usr/local/bin/rclone
 export RCCONFIG=fileserver
 # export HOME=C:\Users\username # Already in understood in Linux/OSX
 export USER=username-on-server
