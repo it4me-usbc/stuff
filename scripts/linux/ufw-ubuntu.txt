@@ -1,0 +1,15 @@
+## Install and enable the firewall using UFW
+
+sudo apt-get install ufw
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw enable
+
+#######
+# Allowing SSH
+
+# Allow SSH from everywhere
+# sudo ufw allow ssh
+
+# Alternatively you can substitute the ufw allow ssh line with the following to only allow certain networks ssh only:
+# sudo ufw allow from 192.168.1.1/24 to any port 22
