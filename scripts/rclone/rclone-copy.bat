@@ -5,7 +5,7 @@ ECHO Set the parameters like the Rclone location the config name and where the f
 ECHO ========================
 ECHO When you type out the full command it would look like this.
 ECHO . 
-ECHO c:\rclone\rclone.exe copy "C:\Users\Username\Documents" fileserver:/username
+ECHO c:\rclone\rclone.exe copy -v "C:\Users\Username\Documents" "fileserver:/destination"
 ECHO .
 ECHO ================
 
@@ -14,12 +14,15 @@ REM Rclone location config name, your Windows home folder, and your username on 
 
 SET RC=c:\rclone\rclone.exe
 SET RC-CONFIG=fileserver
-REM SET HOME=C:\Users\username
-SET USER=username-on-server
+REM HOMEPATH is understood by Windows to be C:\Users\username
+SET DATA=D:\Data 
+SET DESTINATION=destination/path
 
 REM The following are provided as examples
+REM quotes are used for directories with spaces
 
-%RC% copy "%HOMEPATH%\Documents" %RC-CONFIG%:/%USER%
-%RC% copy "%HOMEPATH%\Videos" %RC-CONFIG%:/%USER%
-%RC% copy "%HOMEPATH%\Pictures" %RC-CONFIG%:/%USER%
-%RC% copy "%HOMEPATH%\Desktop\Data" %RC-CONFIG%:/%USER%
+%RC% copy -v "%DATA%" "%RC-CONFIG%:/%DESTINATION%"
+%RC% copy -v "%HOMEPATH%\Documents" "%RC-CONFIG%:/%DESTINATION%"
+%RC% copy -v "%HOMEPATH%\Videos" "%RC-CONFIG%:/%DESTINATION%"
+%RC% copy -v "%HOMEPATH%\Pictures" "%RC-CONFIG%:/%DESTINATION%"
+%RC% copy -v "%HOMEPATH%\Desktop\Data" "%RC-CONFIG%:/%DESTINATION%"
