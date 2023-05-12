@@ -13,13 +13,15 @@ echo ================
 
 export RC=/usr/local/bin/rclone
 export RCCONFIG=fileserver
-# export HOME=C:\Users\username # Already in understood in Linux/OSX
-export USER=username-on-server
+# export HOME=/Users/username # Already in understood in Linux/OSX
+export DATA=$HOME/Documents/data
+export DESTINATION=destination/subfolder
 
 # The use of quootes allows for any usernames with spaces.
 # The following are provided as examples
 
-$RC copy "$HOME/Documents" $RCCONFIG:/$USER
-$RC copy "$HOME/Videos" $RCCONFIG:/$USER
-$RC copy "$HOME/Pictures" $RCCONFIG:/$USER
-$RC copy "$HOME/Desktop/Data" $RCCONFIG:/$USER
+$RC copy "$DATA" $RCCONFIG:/$DESTINATION
+$RC copy "$HOME/Documents" $RCCONFIG:/$DESTINATION
+$RC copy "$HOME/Videos" $RCCONFIG:/$DESTINATION
+$RC copy "$HOME/Pictures" $RCCONFIG:/$DESTINATION
+$RC copy "$HOME/Desktop/Data" $RCCONFIG:/$DESTINATION
